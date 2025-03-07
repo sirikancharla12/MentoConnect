@@ -2,10 +2,13 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Star, Clock, Calendar, MessageCircle, Video, DollarSign, Award, Briefcase, Users, ThumbsUp } from 'lucide-react';
 import { mentors } from '../data/mockData';
+import GlassPopupScheduler from './schedule-meeting';
 
 const MentorProfile = () => {
   const { id } = useParams();
-  const mentor = mentors.find(m => m.id === Number(id));
+  // const mentor = mentors.find(m => m.id === parseInt(id as string, 10));
+  const mentor = mentors.find(m => String(m.id) === id);
+
 
   if (!mentor) {
     return <div>Mentor not found</div>;
@@ -77,7 +80,7 @@ const MentorProfile = () => {
           <div className="col-span-2 space-y-8">
             <section>
               <h2 className="text-2xl font-bold mb-4">About Me</h2>
-              <p className="text-gray-600 leading-relaxed">{mentor.bio}</p>
+              <p className="text-gray-600 leading-relaxed">{mentor.about}</p>
             </section>
 
             <section>

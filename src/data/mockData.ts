@@ -2,43 +2,74 @@ import { Users, BookOpen, Code, Brain, Target, TrendingUp, MessageSquare } from 
 
 export const mentors = [
   {
-    id: 1,
-    name: "Dr. Sarah Chen",
-    title: "AI Research Scientist",
-    company: "TechCorp AI",
-    expertise: ["Artificial Intelligence", "Machine Learning", "Data Science"],
+    id: "1",
+    name: "Alice Johnson",
+    title: "Senior Software Engineer",
+    company: "Google",
+    about: "Passionate about teaching web development and software architecture.",
+    expertise: ["JavaScript", "React", "Node.js", "System Design"],
+    availability: ["Monday", "Wednesday", "Friday"],
     rating: 4.9,
-    reviews: 128,
+    reviews: 120,
     hourlyRate: 150,
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    availability: "Available next week",
-    bio: "Leading AI researcher with 10+ years of experience in developing cutting-edge machine learning solutions. Previously worked at Google AI and Stanford AI Lab."
+    sessionsCompleted: 300,
+    imageUrl: "https://randomuser.me/api/portraits/women/45.jpg"
   },
   {
-    id: 2,
-    name: "James Wilson",
-    title: "Senior Software Architect",
-    company: "Microsoft",
-    expertise: ["System Design", "Cloud Architecture", "Leadership"],
+    id: "2",
+    name: "Bob Smith",
+    title: "Cloud Architect",
+    company: "Amazon AWS",
+    about: "Experienced in cloud computing, DevOps, and scalable systems.",
+    expertise: ["AWS", "Kubernetes", "Terraform", "DevOps"],
+    availability: ["Tuesday", "Thursday", "Saturday"],
     rating: 4.8,
     reviews: 95,
     hourlyRate: 200,
-    imageUrl: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    availability: "Available tomorrow",
-    bio: "20+ years of experience in software architecture and team leadership. Specialized in scalable systems and cloud-native applications."
+    sessionsCompleted: 250,
+    imageUrl: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
-    id: 3,
-    name: "Emily Rodriguez",
-    title: "Product Design Lead",
-    company: "Design Studios",
-    expertise: ["UX Design", "Product Strategy", "Design Systems"],
+    id: "3",
+    name: "Charlie Lee",
+    title: "AI/ML Engineer",
+    company: "OpenAI",
+    about: "Helping students and professionals dive into machine learning and AI.",
+    expertise: ["Python", "TensorFlow", "NLP", "Deep Learning"],
+    availability: ["Monday", "Thursday", "Sunday"],
+    rating: 4.7,
+    reviews: 80,
+    hourlyRate: 180,
+    sessionsCompleted: 220,
+    imageUrl: "https://randomuser.me/api/portraits/men/47.jpg"
+  },
+  {
+    id: "4",
+    name: "Diana Patel",
+    title: "Frontend Developer",
+    company: "Netflix",
+    about: "Love mentoring on UI/UX design and frontend development.",
+    expertise: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+    availability: ["Wednesday", "Friday", "Saturday"],
+    rating: 4.6,
+    reviews: 60,
+    hourlyRate: 120,
+    sessionsCompleted: 150,
+    imageUrl: "https://randomuser.me/api/portraits/women/50.jpg"
+  },
+  {
+    id: "5",
+    name: "Edward Kim",
+    title: "Cybersecurity Expert",
+    company: "Microsoft",
+    about: "Specializing in cybersecurity, ethical hacking, and network security.",
+    expertise: ["Cybersecurity", "Ethical Hacking", "Penetration Testing"],
+    availability: ["Tuesday", "Thursday", "Sunday"],
     rating: 4.9,
-    reviews: 156,
-    hourlyRate: 175,
-    imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    availability: "Limited availability",
-    bio: "Award-winning product designer with a passion for creating intuitive and beautiful user experiences. Former lead designer at Airbnb and Uber."
+    reviews: 110,
+    hourlyRate: 250,
+    sessionsCompleted: 275,
+    imageUrl: "https://randomuser.me/api/portraits/men/53.jpg"
   }
 ];
 
@@ -159,6 +190,23 @@ export const mockUsers = {
   ]
 };
 
+export const Mentor=[
+  {
+    id: 1,
+    name: "Alice Johnson",
+    title: "Senior Software Engineer",
+    company: "Google",
+    about: "Passionate about teaching web development and software architecture.",
+    expertise: ["JavaScript", "React", "Node.js", "System Design"],
+    availability: ["Monday", "Wednesday", "Friday"],
+    rating: 4.9,
+    reviews: 120,
+    hourlyRate: 150,
+    sessionsCompleted: 300,
+    // imageUrl: "https://randomuser,me/api/port
+  }
+]
+
 export const upcomingSessions = [
   {
     id: 1,
@@ -177,3 +225,4 @@ export const upcomingSessions = [
     status: "scheduled"
   }
 ];
+

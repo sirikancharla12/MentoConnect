@@ -1,6 +1,8 @@
 import React from 'react';
-import { Calendar, Clock, Users, DollarSign, Star, MessageCircle, Video, TrendingUp, BookOpen } from 'lucide-react';
+import { Calendar, Clock, Users, DollarSign, Star, MessageCircle, Video, TrendingUp, BookOpen, Filter } from 'lucide-react';
 import { format } from 'date-fns';
+import Filters from './mentorfilter';
+import MentorFilters from './mentorfilter';
 
 const MentorDashboard = () => {
   const upcomingSessions = [
@@ -22,6 +24,7 @@ const MentorDashboard = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
+      
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-8">
